@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CT-512</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="main-container">
+        <!-- block -1 -->
+        <div class="block-1">
+            <h6>CT-512</h6>
+        <input type="text" name="text-box" id="text-box">
+        <p>Large Display</p>
+    </div>
+    <!-- Body-container!!! -->
+    <!-- block-2 -->
+    <div class="block-2">
+        <!-- <button onclick="clear()" value="C" class="erase">C</button><br> -->
+       <span> <input type="button" onclick="rem()" value="delete" class="erase"></span>
+    <input type="button" onclick="del()" value="AC" class="delete"><br>
+    <input type="button"onclick = "num(7)" value=7 id=no-7>
+      <input type="button" onclick = num(8) value="8" id="no-8">
+   <input type="button"onclick = num(9) value="9" id="no-9">
+        <input type="button" onclick = "num('+')" value="+" id="plus">
+    </div>
+    <!-- block-3 -->
+    <div class="block-3">
+     <input type="button" onclick = num(4) value="4" id="no-4">
+        <input type="button" onclick = num(5) value="5" id="no-5">
+        <input type="button" onclick = num(6) value="6" id="no-6">
+        <input type="button" onclick = "num('-')" value="-" id="minus">
+    </div>
+    <!-- block -4 -->
+<div class="block-4">
+<input type="button" onclick = num(1) value="1" id="no-1">
+<input type="button" onclick = num(2) value="2" id="no-2">
+<input type="button" onclick = num(3) value="3" id="no-3">
+<input type="button" onclick = "num('*')" value="*" id="multiply">
+</div>
+<div>
+<input type="button" onclick = num(0) value="0" id="zero">
+<input type="button" onclick = "calc()" value="=" id="equal">
+<input type="button" onclick = "num('.')" value="." id="dot">
+<input type="button" onclick = "num('/')" value="/" id="divide">
+</div>
+</div>     
+</body>
+<!-- Footer-container!!! -->
+<script src="vendor.js"></script>
+</html>
